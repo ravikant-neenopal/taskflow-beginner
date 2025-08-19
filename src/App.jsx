@@ -7,7 +7,6 @@ import ShowTasks from "./components/ShowTasks";
 
 function App() {
   const [taskList, setTaskList] = useState(() => {
-    // Load from localStorage on first render
     const saved = localStorage.getItem("taskList");
     return saved ? JSON.parse(saved) : [];
   });
@@ -17,14 +16,12 @@ function App() {
     fetch("http://api.quotable.io/quotes/random")
       .then((res) => res.json())
       .then((data) => {
-        // Adjust this depending on your API response structure
         setQuote(data[0].content || "");
       })
       .catch(() => setQuote("Could not fetch quote."));
   }, []);
 
   useEffect(() => {
-    // Save to localStorage whenever taskList changes
     localStorage.setItem("taskList", JSON.stringify(taskList));
   }, [taskList]);
 

@@ -10,7 +10,6 @@ function TaskForm({ setTaskList }) {
       alert("Task cannot be empty!");
       return;
     }
-    // Handle task submission logic here
     setTaskList((prev) => [
       ...prev,
       {
