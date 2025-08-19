@@ -1,0 +1,17 @@
+.app {
+  margin-top: 70px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f8fb;
+}
+.app main {
+  width: 100%;
+  max-width: 600px;
+  min-height: 80vh;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}

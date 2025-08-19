@@ -1,0 +1,36 @@
+form {
+  background: #eaf4fc;
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+input {
+  padding: 0.5rem;
+  border: 1px solid #b3c2d6;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+button.add-task {
+  background: linear-gradient(90deg, #6a8dff, #8ed6fb);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+button.add-task:hover:not(.disable) {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #6a8dff, #8ed6fb);
+  
+}
